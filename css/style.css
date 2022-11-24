@@ -89,7 +89,7 @@ body {
 }
 
 .principle {
-  height: 685px;
+height: 100;
   background: #1D1D1D;
 }
 
@@ -148,6 +148,7 @@ body {
 .production__left,
 .production__right {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(216px, max-content);
   grid-gap: 15px;
@@ -262,6 +263,7 @@ body {
 
 .registration {
   display: flex;
+  flex-wrap: wrap;
   background-color: #1D1D1D;
   height: 762px;
 
@@ -339,44 +341,19 @@ body {
   font-size: 36px;
   margin-top: 60px;
 }
-
-
-.block {
-  display: flex;
-  justify-content: center;
-  gap: 186px;
-  margin-top: 27px;
+.scheme-sircle{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: #D7B56D;
+}
+.scheme-line{
+  width: 138px;
+height: 4px;
+background: #D7B56D;
 }
 
-.block-2 {
-  display: flex;
-  justify-content: center;
-  transform: translate(-35%);
-  gap: 186px;
-  margin-top: 36px;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.item {
-
-  width: 50px;
-  height: 50px;
-  border: solid 2px #D7B56D;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #D7B56D;
-
-  border-radius: 50%;
-  transition: 0.5s;
-  border-right: solid 2px #D7B56D;
-}
-
-.scheme-text {
-  display: flex;
-  justify-content: center;
-  gap: 29px;
-}
 
 .text-11 {
   display: flex;
@@ -398,6 +375,7 @@ body {
 
 .proact-img {
   display: flex;
+  flex-wrap: wrap;
   height: 286px;
   justify-content: center;
   align-items: center;
@@ -461,7 +439,10 @@ margin-top: 70px;
 }
 .karta-img{
   margin-top: 31px;
-  position:static;
+height: 602px;
+}
+.karta-img>img{
+  width: 100%;
 }
 .sertifact{
   display: flex;
@@ -552,4 +533,64 @@ margin-top: 18px;
     .navbar{
       background-color: #1D1D1D;
     }
+    @media(max-width: 1100px){
+      .production__left,
+      .production__right{
+    justify-content: space-around;
+      }
+  }
+  @media(max-width: 1200px){
+    .registration-img{
+      width: 300px;
+      height: 300px;
+      
+    }
+  }
+  @media(max-width: 1200px){
+    .registration-img>img{
+      width: 360.7px;
+      height: 298.52px;
+      display: flex;
+      flex-wrap: wrap ;
+
+    }
+  }
+  @media( max-width:920px){
+    .process__video>img{
+
+      width: 405.33px;
+      height: 268.25px;
+    }
+  }
+  @media( max-width:920px){
+    .proact__vedio>img {
+      width: 360.7px;
+height: 298.52px; 
+
+    }
+  }
+ @media(max-width:1px){
+  .project-item{
+    width: 328px;
+    height: 54px;
+  }
+ }
+@media(max-width:967px){
+  .sertifact{
+    width: 418.22px;
+
+
+  }
+
+}   
+  @media(max-width:992px){
+    .tehno{
+flex-wrap: wrap;  
+width: 339px;
+height: 229px;    
+    }
+  }
+  
+
+    
     
